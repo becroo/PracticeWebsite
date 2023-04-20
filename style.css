@@ -46,7 +46,7 @@ li a:hover {
   margin-left: 20px;
 }
 
-.arnie_text {
+.arnie_text .whippetPara {
   text-align: justify;
 }
 
@@ -59,4 +59,4 @@ li a:hover {
   border-radius: 15px;
 }
 
-.whippetPara {text-align:justify;}
+
