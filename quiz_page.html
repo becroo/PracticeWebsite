@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="./images/stop-it.png" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz!</title>
+  </head>
+
+  <body>
+    <ul class="menu">
+      <li class="menu_item"><a href="index.html">Home</a></li>
+      <li class="menu_item"><a href="about_me.html">About Me</a></li>
+      <li class="menu_item active"><a href="quiz_page.html">Quiz Page</a></li>
+    </ul>
+    <br />
+
+    <h1>Quiz Page!</h1>
+    <p>A quiz about dogs.</p>
+
+    <form name="Quiz">
+      <ol>
+        <label for="name">Enter your name: </label
+        ><br />
+
+        <input
+          type="text"
+          name="name"
+          id="user"
+          size="30"
+          placeholder="Joe Bloggs"
+          required
+        />
+
+        <p>Do you like dogs?</p>
+        <input type="radio" name="yes_no" value="yes" />
+        <label for="yes">Yes</label>
+        <br />
+        <input type="radio" name="yes_no" value="no" />
+        <label for="no">No</label
+        ><br />
+        <input type="radio" name="yes_no" value="maybe" />
+        <label for="maybe">Maybe</label
+        ><br /><br />
+
+        <label for="percentage"
+          >How much do you like dogs today from 0 to 100?</label
+        ><br />
+        <input type="number" name="percentage" min="0" max="100" step="10" />
+
+        <br />
+        <p>How many types of dog exist in the world?</p>
+        <input type="radio" name="totaldogs" value="100" />
+        <label for="100">100</label>
+        <br />
+
+        <input type="radio" name="totaldogs" value="200" />
+        <label for="200">200</label
+        ><br />
+
+        <input type="radio" name="totaldogs" value="350" />
+        <label for="350">350</label
+        ><br /><br />
+      </ol>
+    </form>
+    <br />
+    <button type="button" onclick="checkAnswers();">Submit</button>
+    <script src="script.js"></script>
+  </body>
+</html>
